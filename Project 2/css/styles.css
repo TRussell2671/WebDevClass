@@ -1,0 +1,198 @@
+/* Styles CSS
+   Tyler Russell
+   2/8/2016
+   Project 2
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/* apply a natural box layout model to all elements */
+html {
+  	box-sizing: border-box;
+  	font-family: Verdana, Arial, sans-serif;
+  	font-size: 16px;
+  	background-color: #800000;
+}
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
+
+.flex-vertical {
+	width: 1060px;
+	margin: 0 auto;
+	padding: 0 25px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #fff;
+}
+
+.flex-vertical:nth-child(1){
+	box-shadow: 0 5px 15px 3px #4d0000;
+}
+
+.flex-box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 25px;
+}
+
+.margin-bottom-fix {
+	margin-bottom: 0;
+}
+
+/* Typography */
+
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #ff6600;
+}
+
+h1 {
+	font-size: 34px;
+	font-weight: 400;
+	margin: 0 0 15px 0;
+}
+
+h2 {
+	margin: 10px 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+h3 {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #444;
+}
+
+ul, ol, li, p {
+	line-height: 1.6em; 
+}
+
+/* header */
+
+header p {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffbf00;
+}
+
+figure {
+	margin: 0;
+	width: 70%;
+}
+
+figure img {
+	height: 100%;
+	width: 100%;
+}
+
+.gallery {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  margin-bottom: 0;
+}
+.gallery img {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all linear 500ms;
+  -o-transition: all linear 500ms;
+  -moz-transition: all linear 500ms;
+  -webkit-transition: all linear 500ms;
+}
+.gallery img:target {
+  z-index: 2;
+  opacity: 1;
+}
+
+figcaption {
+	margin-top: 0;
+	text-align: center;
+	padding: 8px;
+	background-color: rgb(250,250,250);
+}
+
+.thumbnail a {
+  text-decoration: none;
+  padding: 4px 6px;
+  color: #444;
+}
+.thumbnail a:hover {
+  background-color: #C0EEE8;
+}
+
+/* Ingredients */
+
+.ingredients {
+	width: 30%;
+	margin-right: 25px;
+	padding: 0 20px;
+	background-color: rgb(250,250,250);
+}
+
+.ingredients ul {
+	padding-left: 15px;
+}
+
+.ingredients li {
+	list-style-type: none;
+	padding: 4px 0 4px;
+	border-bottom: 1px dotted rgb(220,220,220);
+}
+
+/* Directions */
+
+.directions {
+	width: 70%;
+	padding-right: 25px;
+}
+
+ol {
+	counter-reset: dir;
+	list-style-type: none;
+	padding-left: 45px;
+}
+
+ol li {
+	padding-bottom: 15px;
+	text-indent: -1.8em;
+}
+
+ol li:before {
+	content: counter(dir) ". ";
+	counter-increment: dir;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+/* Nutrition */
+
+.nutrition {
+	padding: 1px 10px;
+	margin: 35px 0;
+	background-color: rgb(250,250,250);
+}
+
+.nutrition p {
+	font-style: normal;
+	font-size: 13px;
+}
