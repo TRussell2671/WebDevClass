@@ -1,0 +1,109 @@
+/*
+	Tyler Russell
+	Bootstrap project
+	4/4/2016
+*/
+
+@font-face {font-family: OswaldBold;src: url(../fonts/Oswald-Bold.ttf);}
+@font-face {font-family: OswaldHeavy;src: url(../fonts/Oswald-Heavy.ttf);}
+@font-face {font-family: OswaldDemiBold;src: url(../fonts/Oswald-DemiBold.ttf);}
+@font-face {font-family: OswaldRegular;src: url(../fonts/Oswald-Regular.ttf);}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+
+/*
+	Header 
+*/
+
+header {
+	position: relative;
+}
+
+header h1 {
+	font-family: OswaldDemiBold;
+	font-size: 50px;
+	color: #02CDD0;
+	text-shadow: 1px 1px 0 #333, 2px 2px 0 #000;
+}
+
+header h2 {
+	font-family: OswaldRegular;
+	font-size: 32px;
+}
+
+.logo {
+	position: absolute;
+	bottom: 0;
+}
+
+#bkgd-pet {
+	background: #fff url('../img/dog.jpg') no-repeat center center;
+	background-size: cover;
+	min-height: 500px;
+}
+
+/*
+	Body
+*/
+
+.get-started-bkgd, .visit-bkgd, .rates-bkgd {
+	background-color: #DADADA;
+	border-bottom: 2px solid #CCC;
+}
+.inner-container-small {
+	height: 300px;
+	width: 75%;
+	padding: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*
+	footer
+*/
+
+.footer-content {
+	background: #696969;
+	padding: 75px;
+	text-align: center;
+}
+
+footer address {
+	font-size: 20px;
+	color: #ccc;
+}
+
+footer #phone, footer #email a {
+	font-size: 20px;
+	color: #ccc;
+}
+
+footer #phone:hover, footer #email a:hover {
+	font-size: 20px;
+	color: #02CDD0;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.get-started-bkgd, .visit-bkgd, .rates-bkgd {
+		border-right: 2px solid #CCC;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
