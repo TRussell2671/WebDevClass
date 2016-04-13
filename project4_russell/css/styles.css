@@ -27,20 +27,67 @@ body {
 }
 
 .flex-wrapper {
+<<<<<<< HEAD
 	display: flex;
 	min-height: 100%;
 	align-items: center;;
+=======
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 100%;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+>>>>>>> refs/remotes/origin/gh-pages
 }
 
 .container {
 	width:55%;
 	opacity: 0;
+<<<<<<< HEAD
 }
 
+=======
+	font-family: 'Libre Baskerville', serif;
+}
+
+/* cubic-benzier transition-timing-function provided in part by: http://cubic-bezier.com/
+   I would like to thank the MDN for helping me with transition syntax: https://developer.mozilla.org/en-US/docs/Web/CSS/transition; */
+.line {
+	-webkit-transition: width 2.5s cubic-bezier(.2,.38,.34,.9);
+	transition: width 2.5s cubic-bezier(.2,.38,.34,.9);
+	display: inline-block;
+	width: 0px;
+	height: 4px;
+	background: #D17944;
+	margin-top: 34px;
+	margin-left: 122px;
+}
+
+.load_container {
+	-webkit-transition: opacity 1.5s cubic-bezier(.29,.14,.91,.7);
+	transition: opacity 1.5s cubic-bezier(.29,.14,.91,.7);
+	width:55%;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.load_container .line {
+	width: 45%;
+}
+
+
+/*
+	TYPOGRAPHY
+*/
+>>>>>>> refs/remotes/origin/gh-pages
 
 /* Beautiful quotes: https://css-tricks.com/almanac/properties/c/content/ 
    https://css-tricks.com/almanac/properties/q/quotes/  */
 p.quote::before {
+<<<<<<< HEAD
   font-family: 'Libre Baskerville', serif;
   content: open-quote;
   font-size: 200px;
@@ -49,6 +96,15 @@ p.quote::before {
   top: -15px;
   color: #999;
   opacity: 0.4;
+=======
+	content: open-quote;
+	font-size: 200px;
+	position: absolute;
+	left: 0;
+	padding-top: 55px;
+	color: #999;
+	opacity: 0.4;
+>>>>>>> refs/remotes/origin/gh-pages
 }
 
 p.quote {
@@ -56,14 +112,23 @@ p.quote {
 	margin: 0 auto;
 	padding-left: 100px;
 	width: 95%;
+<<<<<<< HEAD
 	font-family: 'Libre Baskerville', serif;
 	font-size: 28px;
+=======
+	font-size: 28px;
+	line-height: 1.5em;
+	letter-spacing: .6px;
+>>>>>>> refs/remotes/origin/gh-pages
 	color: #fff;
 }
 
 p.author {
 	display: inline-block;
+<<<<<<< HEAD
 	font-family: 'Libre Baskerville', serif;
+=======
+>>>>>>> refs/remotes/origin/gh-pages
 	font-size: 22px;
 	float: right;
 	color: #fff;
@@ -77,11 +142,16 @@ p.author {
 .large-font {
 	font-size: 72px;
 	color: #944EE2;
+<<<<<<< HEAD
+=======
+	text-shadow: 3px 3px 0px #000, 5px 5px 0px #210C39;
+>>>>>>> refs/remotes/origin/gh-pages
 }
 
 .medium-font {
 	font-size: 32px;
 	color: #E6A654;
+<<<<<<< HEAD
 }
 
 
@@ -108,5 +178,8 @@ p.author {
 
 .load_container .line {
   width: 45%;
+=======
+	white-space: nowrap;
+>>>>>>> refs/remotes/origin/gh-pages
 }
 
